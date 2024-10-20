@@ -1,0 +1,137 @@
+html,body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+    header img{
+        width: 50px;
+    }
+
+    header button{
+        background: none;
+        border: none;
+        position: absolute;
+        right: 1.5em;
+        top: 0;
+        text-decoration: none;
+        text-align: right;
+    }
+
+    header button span{
+        background-image: url(./bars.svg);
+        background-position: right center;
+        background-repeat: no-repeat;
+        content: "";
+        display: inline-block;
+        height: 3.75em;
+        vertical-align: top;
+        width: 2em;
+    }
+
+    /* アニメーション前のメニューの状態 */
+    .menu{
+        transform: translateX(100vw);
+        transition: all .3s linear;
+    }
+    /* アニメーション後のメニューの状態 */
+    .menu.is-active{
+        transform: translateX(calc(100% - 300px));
+    }
+
+
+.top{
+    background-color: #6791eb;
+    height: 100vh;
+}
+    .top img{
+        text-align: center;
+        margin: 10vh calc(50vw - 18vw) 5vh calc(50vw - 18vw);
+        width: 30vw;
+        border-radius: 22%;
+        border: #4562A2 2vw solid;
+        }
+    
+    .top .main-text{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: white 2px solid;
+        border-bottom: white 2px solid;
+    }
+
+    .top .main-text h2,.top .main-text h1{
+        margin: 0.5rem auto;
+        text-align: center;
+        color: white;
+    }
+
+    .join{
+        width: fit-content;
+        border: none;
+        background-color: #5865f2;
+        margin: 2rem auto 2em auto;
+        padding: 0.5em 2em;
+        border-radius: 0.5em;
+        box-shadow: 0px 0px 10px #4562A2;
+    }
+    .join:hover{
+        background-color: #8790f3;
+    }
+    .join a{
+        color: white;
+        text-decoration: none;
+        font-size: xx-large;
+    }
+
+.about{
+    padding: 5vh 0 10vh 0;
+    background-size: cover;
+        background-position: center;
+        position: relative;
+}
+    .about h2{
+        margin-top: 0;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    .about p{
+        text-align: center;
+        width:fit-content;
+        padding: 1em;
+        margin: 0 auto;
+    }
+.first{
+    background-image: linear-gradient(90deg,#ffffff9c,#ffffff9c),url(./first.jpg);
+}
+.second{
+    background-color: #b5baf7;
+    background-image: linear-gradient(#bebebe85,#bebebe85),url(./second.jpg);
+}
+    
+footer p{
+    text-align: center;
+    background-color: #b5baf7;
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+@media screen and (min-width: 850px){
+    .top{
+        display: flex;
+        align-items: center;
+    }
+    .top img{
+    text-align: center;
+    margin: auto;
+    width: 30vh;
+    border-radius: 22%;
+    border: #4562A2 2vh solid;
+    }
+    .top div{
+        margin-right: auto;
+    }
+}
