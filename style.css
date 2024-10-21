@@ -1,6 +1,7 @@
 html,body{
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -32,14 +33,33 @@ header{
         width: 2em;
     }
 
-    /* アニメーション前のメニューの状態 */
     .menu{
-        transform: translateX(100vw);
-        transition: all .3s linear;
+        height: 100vh;
+        width: 300px;
+        background-color: #8790f3;
+        display: none;
     }
-    /* アニメーション後のメニューの状態 */
-    .menu.is-active{
-        transform: translateX(calc(100% - 300px));
+    .show{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .menu p{
+        margin: 0 0 0 calc(100% - 4em);
+        text-align: right;
+        background-image: url(./close.svg);
+        background-position: right center;
+        background-repeat: no-repeat;
+        content: "";
+        display: inline-block;
+        height: 3.75em;
+        vertical-align: top;
+        width: 2em;
+    }
+    .menu li{
+        list-style: none;
+        color: white;
     }
 
 

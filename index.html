@@ -12,16 +12,20 @@
         <header>
             <img src="./DevTeensLogo.png" alt="logo">
                 <button class="menu-btn"><span></span></button>
-                <ul class="menu">
-                    <li>aaaaaaa</li>
-                </ul>
+                <div class="menu">
+                    <p class="menu-btn-close"></p>
+                    <ul>
+                        <a href=""><li>aaaaaaa</li></a>
+                    </ul>
+                </div>
         </header>
+
         <div class="top">
             <img src="./DevTeensLogo.png" alt="logo">
             <div>
                 <div class="main-text">
-                    <h2>小学・中学・高校生</br>プログラマーコミュニティ</h2>
                     <h1>「Dev Teens」</h1>
+                    <h2>小学・中学・高校生</br>プログラマーコミュニティ</h2>
                 </div>
                 <div class="join"><a href="https://forms.gle/FG3UxnDPCegJL9yL6">参加申請をする</a></div>
             </div>
@@ -48,7 +52,6 @@
         <!--
         discordメンバーリスト
         <iframe src="https://discord.com/widget?id=1293176279209873450&theme=light" width="80%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
-
         <footer>
             <p>©Dev Teens Team</p>
         </footer>
@@ -62,7 +65,12 @@
             <script>
                 $(function(){
                 $('.menu-btn').on('click', function(){
-                    $('.menu').toggleClass('is-active');
+                    $('.menu').toggleClass('show');
+                });
+                }());
+                $(function(){
+                $('.menu-btn-close').on('click', function(){
+                    $('.menu').toggleClass('show');
                 });
                 }());
             </script>
