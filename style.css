@@ -1,6 +1,14 @@
+
+
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 html,body{
+    font-family: "Zen Maru Gothic",serif;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
     overflow-x: hidden;
 }
 
@@ -34,16 +42,16 @@ header{
     }
 
     .menu{
+        position: fixed;
         height: 100vh;
         width: 300px;
         background-color: #8790f3;
         display: none;
+        top: 0;
+        right: 0;
     }
     .show{
         display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
     }
     .menu p{
         margin: 0 0 0 calc(100% - 4em);
@@ -64,8 +72,7 @@ header{
 
 
 .top{
-    background-color: #6791eb;
-    height: 100vh;
+    height: 70vh;
 }
     .top img{
         text-align: center;
@@ -73,7 +80,7 @@ header{
         width: 30vw;
         border-radius: 22%;
         border: #4562A2 2vw solid;
-        }
+    }
     
     .top .main-text{
         width: fit-content;
@@ -81,12 +88,23 @@ header{
         margin-right: auto;
         border-top: white 2px solid;
         border-bottom: white 2px solid;
+
+        
     }
 
     .top .main-text h2,.top .main-text h1{
         margin: 0.5rem auto;
         text-align: center;
-        color: white;
+    }
+
+    .top .main-text h1{
+        font-size: 3rem;
+        color: #4562A2;
+    }
+
+    .top .main-text h2{
+        font-size: 1rem;
+        color: #000000;
     }
 
     .join{
@@ -110,8 +128,8 @@ header{
 .about{
     padding: 5vh 0 10vh 0;
     background-size: cover;
-        background-position: center;
-        position: relative;
+    background-position: center;
+    background-image: linear-gradient(90deg,#ffffff9c,#ffffff9c),url(./first.jpg);
 }
     .about h2{
         margin-top: 0;
@@ -124,13 +142,10 @@ header{
         padding: 1em;
         margin: 0 auto;
     }
-.first{
-    background-image: linear-gradient(90deg,#ffffff9c,#ffffff9c),url(./first.jpg);
-}
-.second{
-    background-color: #b5baf7;
-    background-image: linear-gradient(#bebebe85,#bebebe85),url(./second.jpg);
-}
+
+    #form{
+        margin: 0 calc(50vw - 225px);
+    }
     
 footer p{
     text-align: center;
