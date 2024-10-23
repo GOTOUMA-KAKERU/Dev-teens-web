@@ -14,76 +14,53 @@
     </head>
 	<body>
         <header>
-            <img src="./DevTeensLogo.png" alt="logo">
-                <button class="menu-btn"><span></span></button>
-                <div class="menu">
-                    <p class="menu-btn-close"></p>
-                    <ul>
-                        <a href="./member/index.html"><li>メンバー</li></a>
-                    </ul>
+            <a href="#top"><img src="./DevTeensLogo.png" alt="logo"></a>
+                <div class="menu"><a href="#about"><img src="./icons/info.svg" alt="aboutへのリンク"></a>
                 </div>
         </header>
-
-        <div class="top">
-            <img src="./DevTeensLogo.png" alt="logo">
-            <div>
-                <div class="main-text">
-                    <h1>「Dev Teens」</h1>
-                    <h2>中学・高校・大学生</br>プログラマー・エンジニアコミュニティ</h2>
+        <main>
+            <div class="top" id="top">
+                <img src="./DevTeensLogo.png" alt="logo">
+                <div>
+                    <div class="main-text">
+                        <h1>「Dev Teens」</h1>
+                        <h2>中学・高校・大学生</br>プログラマー・エンジニアコミュニティ</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <h2 class="catchphrase">仲間と開発したい</h2>
-        <div class="about">
-            <h2>DevTeensとは?</h2>
-            <p>中・高・大学生だけの純粋な交流場</p>
-            <ul>
-                <li>周りにプログラミングなどの話ができる人がいない</li>
-                <li>大人のコミュニティは敷居が高すぎる</li>
-                <li>人に教えたり教えられたりしたい</li>
-            </ul>
-            <p>
-                中学生、高校生のプログラマーの方々って意外といますよね?<br>
-                しかしコミュニティってほとんどないんです。<br>
-                それなら作ってしまおう!と発足したのがDevTeensです。
-            </p>
-        </div>
-
-        <div class="member">
-        <h2>メンバー</h2>
-            <div>
-                <h3>架流さん</h3>
-                <small>コミュニティマネージャー</small>
-                <p>はじめまして!架流さんです</p>
+            <h2 class="catchphrase" id="about">仲間と開発したい</h2>
+            <div class="about">
+                <h2>DevTeensとは?</h2>
+                <p>中・高・大学生だけの純粋な交流場</p>
+                <ul>
+                    <li>周りにプログラミングなどの話ができる人がいない</li>
+                    <li>大人のコミュニティは敷居が高すぎる</li>
+                    <li>人に教えたり教えられたりしたい</li>
+                </ul>
+                <p>
+                    中学生、高校生のプログラマーの方々って意外といますよね?<br>
+                    しかしコミュニティってほとんどないんです。<br>
+                    それなら作ってしまおう!と発足したのがDevTeensです。
+                </p>
             </div>
-        </div>
 
-        <div id="form">
-            <h2>入会</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWFTHFwXf1ILWUJKye8Vw4ybOB68ByUkWl3ua9aUoDL5qIuA/viewform?embedded=true" width="450" height="3100px" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-        </div>
+            <div class="member" id="member">
+            <h2>メンバー</h2>
+                <div>
+                    <h3>架流さん</h3>
+                    <small>コミュニティマネージャー</small>
+                    <p>はじめまして!架流さんです</p>
+                </div>
+            </div>
 
-        <footer>
-            <p>©Dev Teens Team</p>
-        </footer>
-        <!--Javascript-->
-            <!--jQUERY-->
-            <script
-            src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
-        
-            <script>
-                $(function(){
-                $('.menu-btn').on('click', function(){
-                    $('.menu').toggleClass('show');
-                });
-                }());
-                $(function(){
-                $('.menu-btn-close').on('click', function(){
-                    $('.menu').toggleClass('show');
-                });
-                }());
-            </script>
+            <div id="form">
+                <h2>入会</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWFTHFwXf1ILWUJKye8Vw4ybOB68ByUkWl3ua9aUoDL5qIuA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+
+            <footer>
+                <p>©Dev Teens Team</p>
+            </footer>
+        </main>
     </body>
 </html>
